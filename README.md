@@ -24,18 +24,28 @@ Register the models with the Django admin site. In admin.py under app folder, re
 from django.db import models
 
 # Create your models here. 
+
 from django.db import models
+
 from django.contrib import admin
+
 # Create your models here.
+
 class Customer(models.Model):
+
     customerid= models.CharField(max_length=8,primary_key=True)
+    
     customername =models.CharField(max_length=100)
+    
     mobilenumber =models.CharField(max_length=100)
+    
     email=models.EmailField()
+    
     quantity= models.IntegerField()
    
 
 class CustomerAdmin(admin.ModelAdmin):
+
     list_display = ('customerid','customername','mobilenumber','email','quantity')
 
 
