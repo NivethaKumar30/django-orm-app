@@ -4,6 +4,7 @@
 To develop a Django application to store and retrieve data from a database using Object Relational Mapping(ORM).
 
 ## Entity Relationship Diagram
+![en](https://user-images.githubusercontent.com/119559844/215321060-33a61137-cbe6-4cd9-8563-751f2e676449.png)
 
 
 ## DESIGN STEPS
@@ -36,6 +37,7 @@ class CustomerAdmin(admin.ModelAdmin):
     list_display = ('customerid','customername','mobilenumber','email','quantity')
 
 ## OUTPUT
+![orm](https://user-images.githubusercontent.com/119559844/215321077-b3bb9ca7-551f-49e1-8e72-f9675753658f.png)
 
 ## RESULT
 Thus a Django application to store and retrieve data from a database using Object Relational Mapping(ORM) is developed
